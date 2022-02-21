@@ -46,12 +46,12 @@ body {
 	padding: 20px;
 	width: 100%;
 	text-align: center;
-	color: #000;
+	color: #f2f2f2;
 	transition: .3s ease-out all;
 }
 
 .navbar a:hover {
-	background: #1D2F3D;
+	background: #7f5af0;
 	color: #fff;
 	text-decoration: none;
 }
@@ -74,9 +74,10 @@ body {
 
 .contenedor-imagen {
 	height: 100vh;
+	background-color: 242629;
 }
 
-.contenedor-imagen img {
+.contenedor-imagen img{
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
@@ -107,11 +108,15 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2); /*Color sombreado de card*/
     overflow: hidden;
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center; /*Alineamos texto*/
     transition: all 0.25s; 
     /* background-color: beige; */
     /* Linea background-color agregada */
+}
+
+.container-card-text{
+	margin: 60px 0px;
 }
 
 .container .card:hover {
@@ -163,14 +168,29 @@ main .contenido p {
 
 main .contenido .titulo {
     font-family:'Poppins', sans-serif;
-	font-weight: normal;
+	/* font-weight: normal; */
+	font-size: 35px;
 	color: #f2f2f2;
 	/* padding-top: 20px; */
 }
 
 main .contenido .fecha {
-	font-size: 14px;
+	font-size: 16px;
 	color: #B5B5B5;
+}
+
+main .contenido .container-stack{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .contenido .stack{
+	color: white;
+	text-align: center;
+	margin: 5px;
+	padding: 0px 10px;
+	border-radius:5px;
+	background-color: #7f5af0;
 }
 
 /* * ============================== */
@@ -181,7 +201,7 @@ aside {
 	min-width: 40%;
 	margin: 40px 20px 20px 0;
 	height: 100%;
-	background: #1D2F3D;
+	/* background: #1D2F3D; */
 	padding: 20px;
 	border-radius: 3px;
 	position: sticky;
@@ -189,12 +209,19 @@ aside {
 	color: #f2f2f2;
 }
 
+/* DONDE CRECI */
 aside .titulo {
 	font-family:'Poppins', sans-serif;
 	font-weight: normal;
 	font-size: 35px;
 	margin-bottom: 20px;
 	color: #f2f2f2;
+}
+
+aside .contenedor-titulo-p{
+	font-family:'Poppins', sans-serif;
+	font-size: 19px;
+	color:#f2f2f2;
 }
 
 aside .indice a {
@@ -245,5 +272,9 @@ main .post {
 
 	main .contenedor {
 		flex-direction: column;
+	}
+
+	.container-card-text{
+	margin:0px;
 	}
 }
