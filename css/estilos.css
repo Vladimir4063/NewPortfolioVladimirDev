@@ -12,19 +12,21 @@ html {
 a {
 	text-decoration: none;
 	outline: none;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 a:hover {
 	text-decoration: underline;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;	
 	background: #242629;
 	/* cardhover */
 	width: 100%;
     height: 100%;
-    font-family: sans-serif;
     letter-spacing: 0.03em;  /*Espaciado entre letras*/
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
@@ -41,7 +43,6 @@ body {
 }
 
 .navbar a {
-	color: #fff;
 	display: inline-block;
 	padding: 20px;
 	width: 100%;
@@ -65,7 +66,6 @@ body {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 /* * ============================== */
@@ -84,6 +84,66 @@ body {
 	object-fit: cover;
 	object-position: 0 bottom;
 }
+
+/* * ============================== */
+/* * ===== CONTENEDOR CARDS4 ====== */
+/* * ============================== */
+
+.contenedor-cards4 {
+	height: 100vh;
+	background-color: 242629;
+}
+
+.contenedor-cards4 .cont-elements{
+	/* width: 90%; */
+	/* height: 100%; */
+	/* vertical-align: top; */
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+.contenedor-cards4 .cont-title{
+	text-align: center;
+	padding: 30px;
+	margin: 25px 25px 0px 25px;
+	font-size: 9000px; /*fatal, corregir*/
+	color: #f2f2f2;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-cards4 .cont-card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedor-cards4 .cont-card-hability{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #16161a;
+	margin: 30px;
+	width: 35%;
+	height: 265px;
+	border-radius: 6px;
+	color: #f2f2f2;
+}
+
+.contenedor-cards4 img{
+	font-size: 30px;
+	margin: 25px 25px 0px 25px;
+	color: red;
+}
+
+.contenedor-cards4 h2{
+	font-size: 40px;
+	margin-top: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-cards4 p{
+	font-size: 23px;
+	margin: 20px;
+}
+
 
 /* * ============================== */
 /* * ========= CARD HOVER ======== */
@@ -110,7 +170,7 @@ body {
     overflow: hidden;
     /* margin: 20px; */
     text-align: center; /*Alineamos texto*/
-    transition: all 0.25s; 
+    transition: all 0.25s;
     /* background-color: beige; */
     /* Linea background-color agregada */
 }
@@ -212,8 +272,8 @@ aside {
 /* DONDE CRECI */
 aside .titulo {
 	font-family:'Poppins', sans-serif;
-	font-weight: normal;
-	font-size: 35px;
+	/* font-weight: normal; */
+	font-size: 55px;
 	margin-bottom: 20px;
 	color: #f2f2f2;
 }
