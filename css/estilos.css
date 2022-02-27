@@ -73,7 +73,7 @@ body {
 /* * ============================== */
 
 .contenedor-imagen {
-	height: 100vh;
+	height: 100%;
 	background-color: 242629;
 }
 
@@ -90,8 +90,8 @@ body {
 /* * ============================== */
 
 .contenedor-cards4 {
-	height: 100vh;
-	background-color: 242629;
+	height: 100%;
+	background-color: #242629;
 }
 
 .contenedor-cards4 .cont-elements{
@@ -143,6 +143,10 @@ body {
 	font-size: 23px;
 	margin: 20px;
 }
+
+/* * ============================== */
+/* * ===== CONTENEDOR INFO ====== */
+/* * ============================== */
 
 
 /* * ============================== */
