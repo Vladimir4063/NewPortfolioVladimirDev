@@ -105,7 +105,7 @@ body {
 	text-align: center;
 	padding: 30px;
 	margin: 25px 25px 0px 25px;
-	font-size: 9000px; /*fatal, corregir*/
+	font-size: small; /*fatal, corregir*/
 	color: #f2f2f2;
 	font-family: 'Poppins', sans-serif;
 }
@@ -125,12 +125,25 @@ body {
 	height: 265px;
 	border-radius: 6px;
 	color: #f2f2f2;
+	/* hover */
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2); /*Color sombreado de card*/
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.contenedor-cards4 .cont-card-hability:hover{
+	transform: translateY(-15px);
+   	box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.contenedor-cards4 .cont-card-hability p{
+	font-size: 18px;
+	color: #94a1b2;
 }
 
 .contenedor-cards4 img{
 	font-size: 30px;
 	margin: 25px 25px 0px 25px;
-	color: red;
 }
 
 .contenedor-cards4 h2{
@@ -148,6 +161,9 @@ body {
 /* * ===== CONTENEDOR INFO ====== */
 /* * ============================== */
 
+.contenido .post img {
+	width: 400px;
+}
 
 /* * ============================== */
 /* * ========= CARD HOVER ======== */
@@ -181,6 +197,7 @@ body {
 
 .container-card-text{
 	margin: 60px 0px;
+	color: #fffffe;
 }
 
 .container .card:hover {
@@ -197,7 +214,7 @@ body {
     /* font-weight: 600; */
 	font-size: 60px;
 	font-family: 'Poppins', sans-serif;
-	color: seashell;
+	color: fffffe;
 	padding: 20px 0px;
 }
 
@@ -206,7 +223,7 @@ body {
     font-size: 20px;
     font-weight: 300;
 	font-family: 'Poppins', sans-serif;
-	color: seashell;
+	color: fffffe;
 }
 
 /* link Leer mas */
@@ -227,7 +244,7 @@ main {
 main .contenido p {
 	margin-bottom: 20px;
 	line-height: 30px;
-	color: #525151;
+	color: #94a1b2;
 }
 
 main .contenido .titulo {
@@ -240,7 +257,7 @@ main .contenido .titulo {
 
 main .contenido .fecha {
 	font-size: 16px;
-	color: #B5B5B5;
+	color: #94a1b2;
 }
 
 main .contenido .container-stack{
@@ -279,13 +296,13 @@ aside .titulo {
 	/* font-weight: normal; */
 	font-size: 55px;
 	margin-bottom: 20px;
-	color: #f2f2f2;
+	color: #fffffe;
 }
 
 aside .contenedor-titulo-p{
 	font-family:'Poppins', sans-serif;
 	font-size: 19px;
-	color:#f2f2f2;
+	color:#94a1b2;
 }
 
 aside .indice a {
@@ -338,7 +355,46 @@ main .post {
 		flex-direction: column;
 	}
 
+	aside {
+		position: static;
+	}
+
+	/* card-main-blog */
+
+	.container .card h4 {
+		font-size: 60px;
+	}
 	.container-card-text{
-	margin:0px;
+		margin:0px;
+	}
+
+	.contenedor-cards4 .cont-card{
+		flex-direction: column;
+	}
+
+	.contenedor-cards4 .cont-card-hability{
+		width: auto;
+		font-size: 23px;
+		height:auto;
+	}
+
+	
+
+	/* CARDS "Mi trayectoria" */
+
+	.container .card {
+		font-size: small;
+		height: auto;
+		width: auto;
+	}
+	
+	/* INFO img */
+	.contenido .post img {
+		width: 100%;
+	}
+
+	/* INFO cont-card-hability */
+	.cont-card-hability p{
+		font-size: 17px;
 	}
 }
